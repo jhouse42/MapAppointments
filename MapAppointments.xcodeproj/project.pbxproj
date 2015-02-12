@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703A8DB519FE934500E51D83 /* MapItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A8DB419FE934500E51D83 /* MapItemViewController.m */; };
+		703A8DB719FE93C300E51D83 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A8DB619FE93C300E51D83 /* AddressBook.framework */; };
+		7068AD8D19EECC70004B2998 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7068AD8C19EECC70004B2998 /* CoreGraphics.framework */; };
+		7068AD8F19EECC83004B2998 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7068AD8E19EECC83004B2998 /* CoreData.framework */; };
+		7068AD9119EECC8E004B2998 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7068AD9019EECC8E004B2998 /* MobileCoreServices.framework */; };
+		7068AD9319EECCA6004B2998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7068AD9219EECCA6004B2998 /* Foundation.framework */; };
+		708B853619FFF10A00DB93E6 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853419FFF10A00DB93E6 /* 01-refresh.png */; };
+		708B853719FFF10A00DB93E6 /* 01-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853519FFF10A00DB93E6 /* 01-refresh@2x.png */; };
+		708B853A19FFF16C00DB93E6 /* 33-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853819FFF16C00DB93E6 /* 33-cabinet.png */; };
+		708B853B19FFF16C00DB93E6 /* 33-cabinet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853919FFF16C00DB93E6 /* 33-cabinet@2x.png */; };
+		708B853E19FFF23100DB93E6 /* 12-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853C19FFF23100DB93E6 /* 12-eye.png */; };
+		708B853F19FFF23100DB93E6 /* 12-eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 708B853D19FFF23100DB93E6 /* 12-eye@2x.png */; };
 		70FA846919DC7F7200B4925E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA846819DC7F7200B4925E /* main.m */; };
 		70FA846C19DC7F7200B4925E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA846B19DC7F7200B4925E /* AppDelegate.m */; };
 		70FA846F19DC7F7200B4925E /* MapAppointments.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70FA846D19DC7F7200B4925E /* MapAppointments.xcdatamodeld */; };
@@ -15,6 +27,10 @@
 		70FA847719DC7F7200B4925E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FA847619DC7F7200B4925E /* Images.xcassets */; };
 		70FA847A19DC7F7200B4925E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FA847819DC7F7200B4925E /* LaunchScreen.xib */; };
 		70FA848619DC7F7300B4925E /* MapAppointmentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA848519DC7F7300B4925E /* MapAppointmentsTests.m */; };
+		70FA849019DC806000B4925E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FA848F19DC806000B4925E /* MapKit.framework */; };
+		70FA849219DC806C00B4925E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FA849119DC806C00B4925E /* CoreLocation.framework */; };
+		70FA849419DC809D00B4925E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FA849319DC809D00B4925E /* UIKit.framework */; };
+		70FA849719DC817C00B4925E /* CustomAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FA849619DC817C00B4925E /* CustomAnnotations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703A8DB319FE934500E51D83 /* MapItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapItemViewController.h; sourceTree = "<group>"; };
+		703A8DB419FE934500E51D83 /* MapItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapItemViewController.m; sourceTree = "<group>"; };
+		703A8DB619FE93C300E51D83 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7068AD8C19EECC70004B2998 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7068AD8E19EECC83004B2998 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7068AD9019EECC8E004B2998 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7068AD9219EECCA6004B2998 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		708B853419FFF10A00DB93E6 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
+		708B853519FFF10A00DB93E6 /* 01-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh@2x.png"; sourceTree = "<group>"; };
+		708B853819FFF16C00DB93E6 /* 33-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet.png"; sourceTree = "<group>"; };
+		708B853919FFF16C00DB93E6 /* 33-cabinet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet@2x.png"; sourceTree = "<group>"; };
+		708B853C19FFF23100DB93E6 /* 12-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12-eye.png"; sourceTree = "<group>"; };
+		708B853D19FFF23100DB93E6 /* 12-eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12-eye@2x.png"; sourceTree = "<group>"; };
 		70FA846319DC7F7200B4925E /* MapAppointments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAppointments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FA846719DC7F7200B4925E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70FA846819DC7F7200B4925E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +71,11 @@
 		70FA847F19DC7F7300B4925E /* MapAppointmentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppointmentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FA848419DC7F7300B4925E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70FA848519DC7F7300B4925E /* MapAppointmentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAppointmentsTests.m; sourceTree = "<group>"; };
+		70FA848F19DC806000B4925E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		70FA849119DC806C00B4925E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		70FA849319DC809D00B4925E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70FA849519DC817C00B4925E /* CustomAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAnnotations.h; path = ../CustomAnnotations.h; sourceTree = "<group>"; };
+		70FA849619DC817C00B4925E /* CustomAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAnnotations.m; path = ../CustomAnnotations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +83,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A8DB719FE93C300E51D83 /* AddressBook.framework in Frameworks */,
+				7068AD9319EECCA6004B2998 /* Foundation.framework in Frameworks */,
+				7068AD9119EECC8E004B2998 /* MobileCoreServices.framework in Frameworks */,
+				7068AD8F19EECC83004B2998 /* CoreData.framework in Frameworks */,
+				7068AD8D19EECC70004B2998 /* CoreGraphics.framework in Frameworks */,
+				70FA849419DC809D00B4925E /* UIKit.framework in Frameworks */,
+				70FA849219DC806C00B4925E /* CoreLocation.framework in Frameworks */,
+				70FA849019DC806000B4925E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +104,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7068AD9C19EEDE58004B2998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7068AD9219EECCA6004B2998 /* Foundation.framework */,
+				7068AD9019EECC8E004B2998 /* MobileCoreServices.framework */,
+				7068AD8E19EECC83004B2998 /* CoreData.framework */,
+				7068AD8C19EECC70004B2998 /* CoreGraphics.framework */,
+				70FA849319DC809D00B4925E /* UIKit.framework */,
+				70FA849119DC806C00B4925E /* CoreLocation.framework */,
+				70FA848F19DC806000B4925E /* MapKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		70FA845A19DC7F7200B4925E = {
 			isa = PBXGroup;
 			children = (
+				703A8DB619FE93C300E51D83 /* AddressBook.framework */,
 				70FA846519DC7F7200B4925E /* MapAppointments */,
 				70FA848219DC7F7300B4925E /* MapAppointmentsTests */,
 				70FA846419DC7F7200B4925E /* Products */,
@@ -87,10 +145,15 @@
 				70FA846B19DC7F7200B4925E /* AppDelegate.m */,
 				70FA847019DC7F7200B4925E /* ViewController.h */,
 				70FA847119DC7F7200B4925E /* ViewController.m */,
+				70FA849519DC817C00B4925E /* CustomAnnotations.h */,
+				70FA849619DC817C00B4925E /* CustomAnnotations.m */,
 				70FA847319DC7F7200B4925E /* Main.storyboard */,
+				703A8DB319FE934500E51D83 /* MapItemViewController.h */,
+				703A8DB419FE934500E51D83 /* MapItemViewController.m */,
 				70FA847619DC7F7200B4925E /* Images.xcassets */,
 				70FA847819DC7F7200B4925E /* LaunchScreen.xib */,
 				70FA846D19DC7F7200B4925E /* MapAppointments.xcdatamodeld */,
+				7068AD9C19EEDE58004B2998 /* Frameworks */,
 				70FA846619DC7F7200B4925E /* Supporting Files */,
 			);
 			path = MapAppointments;
@@ -99,6 +162,12 @@
 		70FA846619DC7F7200B4925E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				708B853419FFF10A00DB93E6 /* 01-refresh.png */,
+				708B853C19FFF23100DB93E6 /* 12-eye.png */,
+				708B853D19FFF23100DB93E6 /* 12-eye@2x.png */,
+				708B853819FFF16C00DB93E6 /* 33-cabinet.png */,
+				708B853919FFF16C00DB93E6 /* 33-cabinet@2x.png */,
+				708B853519FFF10A00DB93E6 /* 01-refresh@2x.png */,
 				70FA846719DC7F7200B4925E /* Info.plist */,
 				70FA846819DC7F7200B4925E /* main.m */,
 			);
@@ -202,9 +271,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708B853E19FFF23100DB93E6 /* 12-eye.png in Resources */,
+				708B853B19FFF16C00DB93E6 /* 33-cabinet@2x.png in Resources */,
 				70FA847519DC7F7200B4925E /* Main.storyboard in Resources */,
 				70FA847A19DC7F7200B4925E /* LaunchScreen.xib in Resources */,
+				708B853619FFF10A00DB93E6 /* 01-refresh.png in Resources */,
+				708B853F19FFF23100DB93E6 /* 12-eye@2x.png in Resources */,
 				70FA847719DC7F7200B4925E /* Images.xcassets in Resources */,
+				708B853A19FFF16C00DB93E6 /* 33-cabinet.png in Resources */,
+				708B853719FFF10A00DB93E6 /* 01-refresh@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +301,8 @@
 				70FA846C19DC7F7200B4925E /* AppDelegate.m in Sources */,
 				70FA847219DC7F7200B4925E /* ViewController.m in Sources */,
 				70FA846919DC7F7200B4925E /* main.m in Sources */,
+				703A8DB519FE934500E51D83 /* MapItemViewController.m in Sources */,
+				70FA849719DC817C00B4925E /* CustomAnnotations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +495,7 @@
 				70FA848B19DC7F7300B4925E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70FA848C19DC7F7300B4925E /* Build configuration list for PBXNativeTarget "MapAppointmentsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				70FA848E19DC7F7300B4925E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,155 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lo-3t-XOv">
+                                <rect key="frame" x="0.0" y="12" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Appointments Map View" id="QiR-I5-7vd">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9aS-lZ-GvF">
+                                            <connections>
+                                                <segue destination="iBL-4U-p2O" kind="popoverPresentation" popoverAnchorBarButtonItem="9aS-lZ-GvF" id="KoR-EC-UEZ">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-cL-Fqi">
+                                <rect key="frame" x="-3" y="56" width="603" height="307"/>
+                            </mapView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oM-zq-D4e">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Update" image="01-refresh.png" id="dwJ-3I-4Wf">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="-42" vertical="0.0"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="New" image="12-eye.png" id="XPU-St-Cpg"/>
+                                    <tabBarItem title="Go Backs" image="33-cabinet.png" id="waf-Vg-csa">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="42" vertical="0.0"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9oM-zq-D4e" secondAttribute="bottom" id="AVl-Pc-vwj"/>
+                            <constraint firstItem="3lo-3t-XOv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="Jom-OH-xWE"/>
+                            <constraint firstItem="Nb6-cL-Fqi" firstAttribute="top" secondItem="3lo-3t-XOv" secondAttribute="bottom" id="epZ-O1-fqm"/>
+                            <constraint firstItem="9oM-zq-D4e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="epd-gN-Mai"/>
+                            <constraint firstItem="Nb6-cL-Fqi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fQG-3G-qx3"/>
+                            <constraint firstItem="Nb6-cL-Fqi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19" id="h4H-Qx-bVR"/>
+                            <constraint firstItem="3lo-3t-XOv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="h5A-BG-bx1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nb6-cL-Fqi" secondAttribute="bottom" constant="237" id="jlh-5j-JcA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9oM-zq-D4e" secondAttribute="trailing" constant="-16" id="qFY-2K-v5Z"/>
+                            <constraint firstItem="Nb6-cL-Fqi" firstAttribute="trailing" secondItem="3lo-3t-XOv" secondAttribute="trailing" id="skg-SO-4b2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3lo-3t-XOv" secondAttribute="trailing" constant="-16" id="w5A-rX-cxQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fQG-3G-qx3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Nb6-cL-Fqi" id="lnD-0I-nid"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Map Item View Controller-->
+        <scene sceneID="5tn-4m-b5c">
+            <objects>
+                <viewController id="iBL-4U-p2O" customClass="MapItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rgy-ID-qIq"/>
+                        <viewControllerLayoutGuide type="bottom" id="5qe-1Y-1gn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iDk-H3-JSw">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faU-of-uP9">
+                                <rect key="frame" x="70" y="300" width="169" height="30"/>
+                                <state key="normal" title="Directions To">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Appointment Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aa3-eq-uDs">
+                                <rect key="frame" x="16" y="66" width="276" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tat-gz-aOb">
+                                <rect key="frame" x="16" y="167" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-g0-qOG">
+                                <rect key="frame" x="164" y="167" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-Yn-hyY">
+                                <rect key="frame" x="164" y="216" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20e-Ib-RWw">
+                                <rect key="frame" x="70" y="363" width="169" height="30"/>
+                                <state key="normal" title="Directions (Map App)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDirections:" destination="iBL-4U-p2O" eventType="touchUpInside" id="NwY-rf-RL7"/>
+                                    <segue destination="v1i-Ue-UCN" kind="showDetail" id="ZNZ-gV-e9N"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgh-zG-tkZ">
+                                <rect key="frame" x="16" y="118" width="276" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="city" destination="Tat-gz-aOb" id="eKF-iZ-bbk"/>
+                        <outlet property="state" destination="kVI-g0-qOG" id="0om-Ap-fFA"/>
+                        <outlet property="street" destination="wgh-zG-tkZ" id="Hdq-mS-ZjG"/>
+                        <outlet property="txtHotel" destination="Aa3-eq-uDs" id="2XA-mm-gNK"/>
+                        <outlet property="zip" destination="TbN-Yn-hyY" id="tao-af-kxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIy-EL-iX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3fu-jf-hFD">
+            <objects>
+                <viewController id="v1i-Ue-UCN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGA-vR-ewT"/>
+                        <viewControllerLayoutGuide type="bottom" id="It7-1Y-w0d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PMJ-ni-I1H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6l-QI-yI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301" y="301"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="01-refresh.png" width="24" height="26"/>
+        <image name="12-eye.png" width="24" height="16"/>
+        <image name="33-cabinet.png" width="20" height="26"/>
+    </resources>
 </document>

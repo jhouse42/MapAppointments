@@ -7,8 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+{
+    MKPolyline *polyline;
+}
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property(nonatomic, retain)MKPolygon *polygon;
+@property (weak, nonatomic) IBOutlet UISwitch *showHideSwitch;
+
+- (IBAction)showHideOverlay:(id)sender;
+
 
 
 @end
